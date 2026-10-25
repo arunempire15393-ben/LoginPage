@@ -1,0 +1,111 @@
+ 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #e9e7ff, #fce7f3);
+}
+
+.login-card {
+  width: 100%;
+  max-width: 390px;
+  padding: 36px 30px;
+  border-radius: 20px;
+  background: white;
+  box-shadow: 0 15px 45px #37306020;
+  text-align: center;
+}
+
+.logo-icon {
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  margin: 0 auto 14px;
+  border-radius: 16px;
+  background: #6c5ce7;
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+h1 {
+  color: #302b50;
+  font-size: 32px;
+}
+
+.subtitle {
+  margin: 10px 0 25px;
+  color: #888;
+  font-size: 14px;
+}
+
+input {
+  display: block;
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 14px;
+  border: 1px solid #ddd;
+  border-radius: 9px;
+  outline: none;
+}
+
+input:focus {
+  border-color: #6c5ce7;
+}
+
+button {
+  width: 100%;
+  padding: 13px;
+  border-radius: 9px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+form button {
+  border: none;
+  color: white;
+  background: #6c5ce7;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+.message {
+  min-height: 20px;
+  margin-top: 14px;
+  color: #5d4ed1;
+  font-size: 13px;
+}
+
+.divider {
+  margin: 24px 0;
+  color: #999;
+  font-size: 12px;
+}
+
+.create-btn {
+  border: 1px solid #6c5ce7;
+  color: #6c5ce7;
+  background: white;
+}
+
+@media (max-width: 420px) {
+  .login-card {
+    padding: 28px 20px;
+  }
+}
